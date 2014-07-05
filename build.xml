@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="buperspitch" default="copy" basedir=".">
+	<target name="clean">
+		<delete>
+			<fileset dir="C:\wamp\www\buyerspitchadmin" includes="**/*">
+			</fileset>
+		</delete>
+
+	</target>
+	<target name="copy" depends="clean">
+		<copy todir="C:\wamp\www\buyerspitchadmin">
+			<fileset dir="src" />
+		</copy>
+	</target>
+</project>
